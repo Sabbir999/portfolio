@@ -32,6 +32,25 @@ const projects = [
       { icon: Database, text: "Secure payment processing" },
       { icon: Globe, text: "Responsive user interface" }
     ]
+  },
+  {
+    name: "GroceryPro",
+    description:
+      "A Django-based web application enabling users to create personalized grocery lists, track prices, and compare real-time product prices across stores. Features Selenium scraping with advanced data organization using the Ollama Lama 3 model, integrated API notifications, and location suggestions.",
+    githubLink: "https://github.com/Prangon108/GroceryPro",
+    techStack: [
+      { name: "Python", color: "bg-blue-100 text-blue-600" },
+      { name: "Django", color: "bg-green-100 text-green-600" },
+      { name: "Selenium", color: "bg-yellow-100 text-yellow-600" },
+      { name: "AWS", color: "bg-purple-100 text-purple-600" },
+      { name: "Ollama Lama 3", color: "bg-indigo-100 text-indigo-600" },
+      { name: "PostgreSQL", color: "bg-pink-100 text-pink-600" }
+    ],
+    features: [
+      { icon: Code, text: "Personalized list management & Selenium scraping" },
+      { icon: Database, text: "Real-time price tracking & comparison" },
+      { icon: Globe, text: "Integrated API notifications & location suggestions" }
+    ]
   }
 ];
 
@@ -44,20 +63,29 @@ const Projects = () => {
       </div>
       <div className="grid gap-8 md:grid-cols-2">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow"
+          >
             <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-1"></div>
             <div className="p-8">
               <div className="flex items-start justify-between mb-4">
                 <h3 className="text-2xl font-semibold text-gray-900">{project.name}</h3>
                 <div className="flex gap-2">
-                  <a href={project.githubLink} 
-                     className="text-gray-500 hover:text-blue-600 transition-colors"
-                     target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={project.githubLink}
+                    className="text-gray-500 hover:text-blue-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Github size={20} />
                   </a>
-                  <a href="#" 
-                     className="text-gray-500 hover:text-blue-600 transition-colors"
-                     target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="#"
+                    className="text-gray-500 hover:text-blue-600 transition-colors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <ExternalLink size={20} />
                   </a>
                 </div>
