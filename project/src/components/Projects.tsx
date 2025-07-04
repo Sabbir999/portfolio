@@ -2,6 +2,23 @@ import { Github, ExternalLink, Code, Database, Globe, Server } from 'lucide-reac
 
 const projects = [
   {
+    name: "Mini Version Control System",
+    description:
+      "A lightweight, Git-inspired version control system built using Java, featuring core Git functionalities through a CLI interface.",
+    githubLink: "https://github.com/Sabbir999/Mini-VCS", // Replace with your actual repo link if different
+    techStack: [
+      { name: "Java", color: "bg-blue-100 text-blue-600" },
+      { name: "SHA-1", color: "bg-gray-100 text-gray-600" },
+      { name: "JSON", color: "bg-yellow-100 text-yellow-600" },
+      { name: "CLI", color: "bg-indigo-100 text-indigo-600" }
+    ],
+    features: [
+      { icon: Code, text: "Core Git commands: init, add, commit, log, checkout, diff" },
+      { icon: Database, text: "Commit history with SHA-1 hashing & JSON serialization" },
+      { icon: Server, text: "Modular CLI with OOP design and future support for branching" }
+    ]
+  },
+  {
     name: "CareConnect",
     description: "A comprehensive healthcare management system built with React and Node.js.",
     githubLink: "https://github.com/WSU-4110/CareConnect.git",
@@ -99,7 +116,6 @@ const Projects = () => {
                   </li>
                 ))}
               </ul>
-              {/* Tech Stack Badges */}
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech, i) => (
                   <span key={i} className={`px-3 py-1 rounded-full text-sm ${tech.color}`}>
