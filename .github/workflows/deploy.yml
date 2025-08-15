@@ -20,12 +20,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./project  # add if your package.json is inside "project" folder
 
-      - name: Build React app
+      - name: Build Vite project
         run: npm run build
+        working-directory: ./project  # same as above
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./project/dist  # Vite's build output
+
