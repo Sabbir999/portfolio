@@ -6,11 +6,11 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
             About Me
           </h2>
-          <div className="h-1 w-24 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+         {/*<div className="h-1 w-full bg-blue-600 mx-auto mt-4 rounded-full"></div> */}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
-          <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+          <div className="lg:col-span-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden h-full">
             <div className="p-8 md:p-12">
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">My Journey</h3>
@@ -30,12 +30,12 @@ const About = () => {
             <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 border-t border-gray-100">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Development Philosophy</h3>
               <p className="text-gray-700">
-                "Build with purpose, engineer with precision, and deliver with excellence. Every line of code should solve a problem or create value."
+                "Build with purpose, engineer with precision, and deliver with excellence. Every line of code should solve a problem or create value. Keep learning and improving with each project."
               </p>
             </div>
           </div>
           
-          <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 md:p-10 text-white">
+          <div className="bg-gradient-to-br from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 md:p-10 text-white h-full">
             <div className="mb-8">
               <h3 className="text-2xl font-bold mb-6 border-b border-blue-400 pb-3">Core Focus Areas</h3>
               <ul className="space-y-4">
@@ -69,15 +69,7 @@ const About = () => {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span>Continuous learning & growth</span>
-                </li>
-                <li className="flex items-start">
-                  <div className="bg-white/20 p-2 rounded-full mr-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                    </svg>
-                  </div>
-                  <span>Database design & management </span>
+                  <span>Database design & management</span>
                 </li>
                 <li className="flex items-start">
                   <div className="bg-white/20 p-2 rounded-full mr-4">
@@ -93,7 +85,23 @@ const About = () => {
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  <span>Data structures & algorithm</span>
+                  <span>Data structures & algorithms</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-white/20 p-2 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span>Cloud & DevOps fundamentals</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-white/20 p-2 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                  </div>
+                  <span>Continuous learning & growth</span>
                 </li>
               </ul>
             </div>

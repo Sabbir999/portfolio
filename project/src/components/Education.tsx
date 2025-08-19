@@ -6,7 +6,7 @@ const Education = () => {
           <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
             Education
           </h2>
-          <div className="h-1 w-24 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+          {/*<div className="h-1 w-full bg-blue-600 mx-auto mt-4 rounded-full"></div> */}
           <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
             My academic journey in computer science and artificial intelligence
           </p>
