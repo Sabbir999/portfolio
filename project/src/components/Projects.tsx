@@ -1,53 +1,22 @@
-import { Github, Code, Database, Globe, Server, ArrowRight } from 'lucide-react';
+import { Github, Code, Database, Globe, Server, ArrowRight, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
-    name: "Mini Version Control System",
-    description:
-      "Git-inspired version control system implementing core Git functionality through a CLI interface",
-    githubLink: "https://github.com/Sabbir999/Mini-VCS",
-    techStack: [
-      { name: "C++", color: "bg-blue-100 text-blue-800" },
-      { name: "SHA-1", color: "bg-gray-100 text-gray-800" },
-      { name: "JSON", color: "bg-amber-100 text-amber-800" },
-      { name: "CLI", color: "bg-indigo-100 text-indigo-800" }
-    ],
-    features: [
-      { icon: Code, text: "Core Git commands: init, add, commit" },
-      { icon: Database, text: "Commit history with SHA-1 hashing" },
-      { icon: Server, text: "JSON serialization & OOP design" }
-    ]
-  },
-  {
-    name: "CareConnect",
-    description: "Healthcare management system for patient records and appointment scheduling",
-    githubLink: "https://github.com/WSU-4110/CareConnect.git",
+    name: "AI-Study-Assistant",
+    description: "Web-based study platform generating AI-powered flashcards, quizzes, and content summaries with educational games",
+    githubLink: "https://github.com/Sabbir999/AI-Study-Assistant",
+    demoLink: "https://educompanion-857da.web.app/",
     techStack: [
       { name: "React", color: "bg-blue-100 text-blue-800" },
       { name: "Node.js", color: "bg-emerald-100 text-emerald-800" },
-      { name: "MongoDB", color: "bg-purple-100 text-purple-800" },
-      { name: "Express", color: "bg-orange-100 text-orange-800" }
+      { name: "Redux", color: "bg-purple-100 text-purple-800" },
+      { name: "Firebase", color: "bg-amber-100 text-amber-800" },
+      { name: "OpenAI API", color: "bg-emerald-100 text-emerald-800" }
     ],
     features: [
-      { icon: Code, text: "Real-time appointment scheduling" },
-      { icon: Database, text: "Secure patient records management" },
-      { icon: Globe, text: "Integrated notification system" }
-    ]
-  },
-  {
-    name: "PyE-Commerce",
-    description: "Full-featured e-commerce platform with Django backend",
-    githubLink: "https://github.com/Sabbir999/PyE-Commerce.git",
-    techStack: [
-      { name: "Python", color: "bg-blue-100 text-blue-800" },
-      { name: "Django", color: "bg-emerald-100 text-emerald-800" },
-      { name: "PostgreSQL", color: "bg-purple-100 text-purple-800" },
-      { name: "Bootstrap", color: "bg-orange-100 text-orange-800" }
-    ],
-    features: [
-      { icon: Server, text: "Advanced product management" },
-      { icon: Database, text: "Secure payment processing" },
-      { icon: Globe, text: "Responsive UI/UX design" }
+      { icon: Code, text: "AI-powered flashcards & quizzes using GPT-4o" },
+      { icon: Globe, text: "Educational games for enhanced learning" },
+      { icon: Database, text: "Firebase backend with real-time sync" }
     ]
   },
   {
@@ -66,6 +35,57 @@ const projects = [
       { icon: Database, text: "Real-time price tracking" },
       { icon: Globe, text: "Location-based suggestions" }
     ]
+  },
+
+  {
+    name: "Mini Version Control System",
+    description:
+      "Git-inspired version control system implementing core Git functionality through a CLI interface",
+    githubLink: "https://github.com/Sabbir999/Mini-VCS",
+    techStack: [
+      { name: "C++", color: "bg-blue-100 text-blue-800" },
+      { name: "SHA-1", color: "bg-gray-100 text-gray-800" },
+      { name: "JSON", color: "bg-amber-100 text-amber-800" },
+      { name: "CLI", color: "bg-indigo-100 text-indigo-800" }
+    ],
+    features: [
+      { icon: Code, text: "Core Git commands: init, add, commit" },
+      { icon: Database, text: "Commit history with SHA-1 hashing" },
+      { icon: Server, text: "JSON serialization & OOP design" }
+    ]
+  },
+  {
+    name: "PyE-Commerce",
+    description: "Full-featured e-commerce platform with Django backend",
+    githubLink: "https://github.com/Sabbir999/PyE-Commerce.git",
+    techStack: [
+      { name: "Python", color: "bg-blue-100 text-blue-800" },
+      { name: "Django", color: "bg-emerald-100 text-emerald-800" },
+      { name: "PostgreSQL", color: "bg-purple-100 text-purple-800" },
+      { name: "Bootstrap", color: "bg-orange-100 text-orange-800" }
+    ],
+    features: [
+      { icon: Server, text: "Advanced product management" },
+      { icon: Database, text: "Secure payment processing" },
+      { icon: Globe, text: "Responsive UI/UX design" }
+    ]
+  },
+ 
+  {
+    name: "CareConnect",
+    description: "Full-stack healthcare platform connecting users with professionals and enabling peer-to-peer communication with scalable architecture",
+    githubLink: "https://github.com/WSU-4110/CareConnect.git",
+    techStack: [
+      { name: "React", color: "bg-blue-100 text-blue-800" },
+      { name: "Django", color: "bg-emerald-100 text-emerald-800" },
+      { name: "SQL", color: "bg-purple-100 text-purple-800" },
+      { name: "REST API", color: "bg-orange-100 text-orange-800" }
+    ],
+    features: [
+      { icon: Globe, text: "Professional-user connection system" },
+      { icon: Server, text: "Integrated REST APIs & full-stack frameworks" },
+      { icon: Database, text: "Optimized SQL database management" }
+    ]
   }
 ];
 
@@ -77,7 +97,6 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
             Featured Projects
           </h2>
-          {/*<div className="h-1 w-full bg-blue-600 mx-auto mt-4 rounded-full"></div> */}
           <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
             Explore my technical projects showcasing full-stack development, system design, and problem-solving skills
           </p>
@@ -138,15 +157,28 @@ const Projects = () => {
               </div>
               
               <div className="mt-auto px-6 pb-6">
-                <a
-                  href={project.githubLink}
-                  className="w-full inline-flex justify-center items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-4 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 font-medium"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Github size={18} />
-                  <span>View on GitHub</span>
-                </a>
+                <div className="flex gap-3">
+                  <a
+                    href={project.githubLink}
+                    className="flex-1 inline-flex justify-center items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-4 rounded-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github size={18} />
+                    <span>View on GitHub</span>
+                  </a>
+                  {project.demoLink && (
+                    <a
+                      href={project.demoLink}
+                      className="flex-1 inline-flex justify-center items-center gap-2 bg-gradient-to-r from-emerald-600 to-teal-600 text-white py-3 px-4 rounded-lg hover:from-emerald-700 hover:to-teal-700 transition-all duration-300 font-medium"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <ExternalLink size={18} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}
