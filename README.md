@@ -16,4 +16,7 @@ You can now see changes live as you edit the code.
 
 Build for Production
 Run the build command:
+cd project
 npm run build
+
+
